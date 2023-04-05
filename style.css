@@ -1,82 +1,116 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: "Roboto", sans-serif;
 }
 
-.main{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 100px;
-    height: 300px;
-    width: 800px;
-    border: 1px solid red;
-    text-align: center;
+.main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  height: 200px;
+  width: 700px;
+  text-align: center;
 }
 
-.main #title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: rgba(128, 128, 128, 0.815);
-    
-
-}
-
-.main #search{
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 1.5rem;
-    width: 110px;
-    text-align: center;
-}
-
-.main #search:focus{
-    border: none;
-    outline: none;
-    border-bottom: 2px solid black;
-
+.main #title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.815);
    
 }
 
-.whether-Data{
-    display: flex;
-    border: 1px solid red;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    min-height: 200px;
+.main #search {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  width: 110px;
+  text-align: center;
 }
 
-.whether-Data div{
-    border: 1px red solid;
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.main #search:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
 }
 
-.temprature-para{
-    font-size:110px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    display: flex;
+.whether-Data {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  min-height: 200px;
 }
 
-.temprature-para span{
-    font-size:60px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    color: rgba(128, 128, 128, 0.815);
-    margin-top: 60px;
-    text-align: left;
+.whether-Data div {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#wheather-icon{
-    width: 150px;
+.temprature-para {
+  font-size: 110px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  display: flex;
+}
+
+.temprature-para span {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: rgba(128, 128, 128, 0.815);
+  margin-top: 60px;
+  text-align: left;
+}
+
+#wheather-icon {
+  width: 150px;
+}
+
+.otherData {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  color: rgba(128, 128, 128, 0.815);
+  justify-content: center;
+  align-items: center;
+}
+
+.otherData p {
+  height: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 150px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: rgba(128, 128, 128, 0.815);
+  margin-right: auto;
+}
+
+.span-feels-like {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.span-wind {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-right: auto;
+}
+
+.span-humidity {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-right: auto;
 }

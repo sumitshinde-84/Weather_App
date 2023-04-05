@@ -15,7 +15,7 @@
 
     <div class="main">
         <p id="title">Right now in <input id="search" type="text" value="Mumbai" onkeypress="this.style.width = 
-            ((this.value.length + 4) * 9) + 'px';"> it's sunny</p>
+            ((this.value.length + 4) * 9) + 'px';"> it's <span class="condition"></span></p>
         <div class="whether-Data">
             <div class="icon">
                 <img id="wheather-icon"src="" alt="">
@@ -24,12 +24,14 @@
                 <p class="temprature-para">14 <span>°C</span></p>
             </div>
             <div class="otherData">
-
+                <p class="feels-like"> </p>
+                <p class="wind"></p>
+                <p class="humidity"></p>
             </div>
         </div>
         
     </div>
-
+    <script src="https://kit.fontawesome.com/09c4f58860.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
