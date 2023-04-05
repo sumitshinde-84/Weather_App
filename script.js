@@ -5,6 +5,9 @@ const condition = document.querySelector(".condition");
 const feelsLike = document.querySelector(".feels-like");
 const humidity = document.querySelector(".humidity");
 const wind = document.querySelector(".wind");
+const cel = document.querySelector('.cel')
+const far = document.querySelector('.far')
+let result ;
 
 async function fetchWetherData(location = "mumbai") {
   try {
@@ -25,9 +28,20 @@ document.addEventListener("keypress", function (e) {
   }
 });
 
+far.addEventListener('click',()=>{
+   convertToFar()
+
+});
+
+cel.addEventListener('click',()=>{
+  updateWeb(result)
+})
+
+
 function updatePage(location = "Mumbai") {
   fetchWetherData(location).then((data) => {
     console.log(data);
+    result = data
     updateWeb(data);
   });
 }
@@ -39,6 +53,14 @@ function updateWeb(data) {
   feelsLike.innerHTML = `<i class="fa-solid fa-temperature-three-quarters"></i> ${data.current["feelslike_c"]} <span class="span-feels-like"> Feels Like</span>`;
   wind.innerHTML = `<i class="fa-solid fa-wind"></i> ${data.current["wind_kph"]} <span class="span-wind">kph</span> `;
   humidity.innerHTML = `<i class="fa-solid fa-droplet"></i> ${data.current["humidity"]}<span class="span-humidity">%</span> `;
+}
+
+
+
+function convertToFar(){
+  data = result
+  tempreturePara.innerHTML = `${data.current["temp_f"]}<span>°F</span>`;
+  feelsLike.innerHTML = `<i class="fa-solid fa-temperature-three-quarters"></i> ${data.current["feelslike_f"]} <span class="span-feels-like"> Feels Like</span>`;
 }
 
 updatePage();

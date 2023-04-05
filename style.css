@@ -16,6 +16,7 @@ body {
   height: 200px;
   width: 700px;
   text-align: center;
+  align-items: center;
 }
 
 .main #title {
@@ -113,4 +114,43 @@ body {
   font-size: 20px;
   margin-top: 5px;
   margin-right: auto;
+}
+
+.toggle{
+   
+    display: flex;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle > div{
+    font-size: 15px;
+    
+}
+.toggle div:first-child{
+   
+    width: 50%;
+    height: 30px;
+    border: none;
+}
+
+.toggle div:nth-child(2){
+    border-left: 1px solid black;
+    width: 50%;
+    height: 30px;
+}
+
+.toggle p{
+    font-size: 15px;
+    margin-top:5px;
+}
+
+.toggle p:hover{
+    font-size: 15px;
+    margin-top:5px;
+    color: rgba(128, 128, 128, 0.815);
 }
