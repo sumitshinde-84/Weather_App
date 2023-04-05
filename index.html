@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+    <div class="main">
+        <p id="title">Right now in <input id="search" type="text" value="Mumbai" onkeypress="this.style.width = 
+            ((this.value.length + 4) * 9) + 'px';"> it's sunny</p>
+        <div class="whether-Data">
+            <div class="icon">
+                <img id="wheather-icon"src="" alt="">
+            </div>
+            <div class="tempreture">
+                <p class="temprature-para">14 <span>°C</span></p>
+            </div>
+            <div class="otherData">
+
+            </div>
+        </div>
+        
+    </div>
 
     <script src="script.js"></script>
 </body>
